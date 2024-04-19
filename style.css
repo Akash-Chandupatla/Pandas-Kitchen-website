@@ -100,6 +100,10 @@ header li {
   color: #36454F;
 }
 
+.bottom {
+  text-align: center;
+}
+
 .bottom .feature {
   display: flex;
   width: 100svw;
@@ -123,13 +127,14 @@ header li {
   margin: none;
 }
 
-/* Section Two */
 main .one .right .left1 {
   display: none;
 }
 
+/* Section Two */
 .two .right {
   margin: 1rem;
+  text-align: center;
 }
 
 .two .right h3 {
@@ -155,12 +160,14 @@ main .one .right .left1 {
 .three {
   margin: 0.5rem;
   padding: 0 0.5rem;
+  text-align: center;
 }
 
 .three .offers .offer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .three h3 {
@@ -187,6 +194,10 @@ main .one .right .left1 {
 
 /* Section four */
 
+.four {
+  text-align: center;
+}
+
 .four h4 {
   padding: 0 0 1rem 1rem;
   font-size: 1.5rem;
@@ -198,13 +209,22 @@ main .one .right .left1 {
   font-size: 1rem;
 }
 
-.four .foods {
+/* .four .foods {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .four .foods .food {
   padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 2.5rem;
+  border: 1.5px solid #36454F;
+  border-radius: 12px;
+  box-shadow: 2px 2px #b63a37;
 }
 
 .four .foods .food h4 {
@@ -214,7 +234,7 @@ main .one .right .left1 {
 }
 
 .four .foods .food img {
-  width: 8rem;
+  width: 50%;
 }
 
 .four .foods .food p {
@@ -225,11 +245,11 @@ main .one .right .left1 {
 .four .foods .food span {
   padding: 0.5rem;
   font-weight: 600;
-  color: #632322;
+  color: #b63a37;
 }
 
 .four .foods .food .price h4 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #26660c;
 }
 
@@ -243,6 +263,7 @@ main .one .right .left1 {
 footer .specialOffer {
   background-color: #ffd5d2;
   padding: 0.5rem;
+  text-align: center;
 }
 
 footer .specialOffer h4,
@@ -267,6 +288,7 @@ footer .input input[type="text"] {
 .details {
   padding-top: 1.5rem;
   display: grid;
+  text-align: center;
 }
 
 .details .detail {
@@ -314,7 +336,6 @@ footer .details .socials img {
 
   .one .left h3 {
     font-size: 1.1.5rem;
-    width: 70%;
     line-height: 1.5rem;
   }
 
@@ -345,7 +366,6 @@ footer .details .socials img {
   .two .right h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    width: 70%;
     padding-bottom: 0.8rem;
   }
 
@@ -365,7 +385,6 @@ footer .details .socials img {
   .three h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    width: 70%;
     padding-bottom: 0.8rem;
   }
 
@@ -393,7 +412,7 @@ footer .details .socials img {
   }
 
   .four h4 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
   }
 
@@ -402,8 +421,17 @@ footer .details .socials img {
     padding-bottom: 1.5rem;
   }
 
+  .four .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .four .foods .food img {
-    width: 18rem;
+    width: 15rem;
+  }
+
+  .four .viewmore {
+    padding-top: 2rem;
   }
 
   footer .specialOffer {
@@ -431,9 +459,24 @@ footer .details .socials img {
 
 @media screen and (min-width: 950px) {
 
+  header .submenu img{
+    width: 1.2rem;
+  }
+
+  header .submenu span{
+    font-size: 1.2rem;
+  }
+
+  header .nav ul{
+    font-size: 1.2rem;
+  }
+
+  .one .left{
+    text-align: center;
+  }
+
   .one .bottom {
     display: flex;
-
   }
 
   .one .right img {
@@ -442,14 +485,7 @@ footer .details .socials img {
     margin: none;
   }
 
-  .two .left img {
-    width: 300px;
-    height: auto;
-    margin: none;
-  }
-
-  .one .left,
-  .bottom {
+  .one .bottom {
     padding: 0 1.5rem;
   }
 
@@ -479,6 +515,12 @@ footer .details .socials img {
     margin-top: 4rem;
   }
 
+  .two .left img {
+    width: 300px;
+    height: auto;
+    margin: none;
+  }
+
   .two .right {
     padding: 0 1.5rem;
   }
@@ -491,6 +533,11 @@ footer .details .socials img {
     padding: 0 1.5rem;
   }
 
+  .four .foods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .four h4 {
     font-size: 1.5rem;
   }
@@ -500,7 +547,7 @@ footer .details .socials img {
   }
 
   .four .foods .food img {
-    width: 22rem;
+    width: 18rem;
   }
 
   footer .specialOffer h4 {
