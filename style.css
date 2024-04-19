@@ -542,6 +542,12 @@ footer .details .socials img {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .four .foods .food{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .four h4 {
     font-size: 1.5rem;
   }
@@ -551,7 +557,7 @@ footer .details .socials img {
   }
 
   .four .foods .food img {
-    width: 18rem;
+    width: 100%;
   }
 
   footer .specialOffer h4 {
