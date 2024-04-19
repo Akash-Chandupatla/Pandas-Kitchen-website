@@ -327,20 +327,24 @@ footer .details .socials img {
   }
 
   .one .left {
+    text-align: center;
     padding: 0 1rem;
   }
 
   .one .left h1 {
     font-size: 3rem;
+    padding-bottom: 1rem;
   }
 
   .one .left h3 {
     font-size: 1.1.5rem;
     line-height: 1.5rem;
+    padding-bottom: 1rem;
   }
 
   .one .left button {
     width: 250px;
+    padding-bottom: 1rem;
   }
 
   .one .right {
@@ -459,19 +463,19 @@ footer .details .socials img {
 
 @media screen and (min-width: 950px) {
 
-  header .submenu img{
+  header .submenu img {
     width: 1.2rem;
   }
 
-  header .submenu span{
+  header .submenu span {
     font-size: 1.2rem;
   }
 
-  header .nav ul{
+  header .nav ul {
     font-size: 1.2rem;
   }
 
-  .one .left{
+  .one .left {
     text-align: center;
   }
 
