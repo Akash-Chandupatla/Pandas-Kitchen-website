@@ -560,11 +560,30 @@ footer .details .socials img {
     width: 100%;
   }
 
+  footer{
+    /* position: relative; */
+    display: grid;
+    /* margin-top: 15vh; */
+  }
+
+  footer .specialOffer{
+    width: 70%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border: 1.5px solid black;
+    border-radius: 2rem;
+    /* position: absolute; */
+    top: -30%;
+    justify-self: center;
+  }
+
   footer .specialOffer h4 {
     font-size: 1.2rem;
   }
 
   footer .details {
+    border-top: 1.5px solid black;
+    background: linear-gradient(to bottom white, #1c1cb4);
     display: grid;
     grid-template-columns: repeat(5, 1fr 2fr 1fr);
     line-height: 3rem;
