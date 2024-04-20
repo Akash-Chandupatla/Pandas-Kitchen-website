@@ -89,6 +89,12 @@ header li {
   padding: 1rem;
 }
 
+/* Animation */
+.one .left .animate__animated {
+  animation: heartBeat;
+  animation-duration: 12s;
+}
+
 .one .left h1 {
   font-size: 3rem;
   color: #36454F;
@@ -542,7 +548,7 @@ footer .details .socials img {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .four .foods .food{
+  .four .foods .food {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -560,13 +566,13 @@ footer .details .socials img {
     width: 100%;
   }
 
-  footer{
+  footer {
     /* position: relative; */
     display: grid;
     /* margin-top: 15vh; */
   }
 
-  footer .specialOffer{
+  footer .specialOffer {
     width: 70%;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
@@ -583,7 +589,8 @@ footer .details .socials img {
 
   footer .details {
     border-top: 1.5px solid black;
-    background: linear-gradient(to bottom white, #1c1cb4);
+    /*     background: linear-gradient(to bottom, rgb(232, 247, 253), #cfcfff);
+ */
     display: grid;
     grid-template-columns: repeat(5, 1fr 2fr 1fr);
     line-height: 3rem;
@@ -605,7 +612,6 @@ footer .details .socials img {
     margin: 0;
     display: flex;
     flex-direction: column;
-    flex-shrink: inherit;
   }
 
 }
